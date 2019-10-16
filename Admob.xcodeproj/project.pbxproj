@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26285E67C51DF901EB495057 /* Pods_Admob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F5F360D5575BF98C77E09C /* Pods_Admob.framework */; };
 		959AA4192356D4D9008F46CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959AA4182356D4D9008F46CA /* AppDelegate.swift */; };
 		959AA41B2356D4D9008F46CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959AA41A2356D4D9008F46CA /* SceneDelegate.swift */; };
 		959AA41D2356D4D9008F46CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959AA41C2356D4D9008F46CA /* ContentView.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28F5F360D5575BF98C77E09C /* Pods_Admob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Admob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40F727595D9AA0B33E3AB841 /* Pods-Admob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Admob.debug.xcconfig"; path = "Target Support Files/Pods-Admob/Pods-Admob.debug.xcconfig"; sourceTree = "<group>"; };
+		8C74BE90C6265C957A55799A /* Pods-Admob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Admob.release.xcconfig"; path = "Target Support Files/Pods-Admob/Pods-Admob.release.xcconfig"; sourceTree = "<group>"; };
 		959AA4152356D4D9008F46CA /* Admob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Admob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		959AA4182356D4D9008F46CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		959AA41A2356D4D9008F46CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26285E67C51DF901EB495057 /* Pods_Admob.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05CD962F3F5178656447884E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28F5F360D5575BF98C77E09C /* Pods_Admob.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63F6DED14C0526EB546B1A69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40F727595D9AA0B33E3AB841 /* Pods-Admob.debug.xcconfig */,
+				8C74BE90C6265C957A55799A /* Pods-Admob.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		959AA40C2356D4D9008F46CA = {
 			isa = PBXGroup;
 			children = (
 				959AA4172356D4D9008F46CA /* Admob */,
 				959AA4162356D4D9008F46CA /* Products */,
+				63F6DED14C0526EB546B1A69 /* Pods */,
+				05CD962F3F5178656447884E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 959AA4292356D4DA008F46CA /* Build configuration list for PBXNativeTarget "Admob" */;
 			buildPhases = (
+				ED0A1734DB4810E257AD327E /* [CP] Check Pods Manifest.lock */,
 				959AA4112356D4D9008F46CA /* Sources */,
 				959AA4122356D4D9008F46CA /* Frameworks */,
 				959AA4132356D4D9008F46CA /* Resources */,
+				E8C7C79ADDE928740590943E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E8C7C79ADDE928740590943E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Admob/Pods-Admob-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Admob/Pods-Admob-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Admob/Pods-Admob-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED0A1734DB4810E257AD327E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Admob-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		959AA4112356D4D9008F46CA /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		959AA42A2356D4DA008F46CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40F727595D9AA0B33E3AB841 /* Pods-Admob.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +372,7 @@
 		};
 		959AA42B2356D4DA008F46CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C74BE90C6265C957A55799A /* Pods-Admob.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
