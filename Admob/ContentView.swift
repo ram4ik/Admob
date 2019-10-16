@@ -11,7 +11,7 @@ import GoogleMobileAds
 
 struct ContentView: View {
     var body: some View {
-        AdView()
+        AdView().frame(width: 150, height: 60)
     }
 }
 
